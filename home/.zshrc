@@ -6,8 +6,7 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(git)
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
+[[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.config ]] && source ~/.config
 
 source $ZSH/oh-my-zsh.sh
