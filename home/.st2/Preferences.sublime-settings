@@ -8,5 +8,7 @@
     "detect_slow_plugins": false,
     "translate_tabs_to_spaces": true,
     "trim_automatic_white_space": true,
-    "trim_trailing_white_space_on_save": true
+    "trim_trailing_white_space_on_save": true,
+    "auto_complete_delay": 500,
+    "rulers": [80, 120]
 }
