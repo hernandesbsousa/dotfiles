@@ -1,0 +1,21 @@
+[user]
+	name = Hernandes B. de Sousa
+	email = hernandes.sousa@gmail.com
+
+[alias]
+    aliases = config --get-regexp alias
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
+    save = !git add -A && git commit -m wip
+    edit = reset --soft HEAD^
+    d = diff --word-diff=color
+    dfs = diff --staged
+    fix = commit --amend -C HEAD
+
+[color]
+	ui = true
+
+[pull]
+    rebase = true
