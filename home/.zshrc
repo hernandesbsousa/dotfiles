@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git)
+plugins=(git rbenv)
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.config ]] && source ~/.config
