@@ -2,20 +2,23 @@
 	name = Hernandes B. de Sousa
 	email = hernandes.sousa@gmail.com
 
+[core]
+	excludesfile = ~/.gitignore
+
 [alias]
-    aliases = config --get-regexp alias
+	aliases = config --get-regexp alias
 	br = branch
 	ci = commit
 	co = checkout
 	st = status
-    save = !git add -A && git commit -m wip
-    edit = reset --soft HEAD^
-    d = diff --word-diff=color
-    dfs = diff --staged
-    fix = commit --amend -C HEAD
+	save = !git add -A && git commit -m wip
+	edit = reset --soft HEAD^
+	d = diff --word-diff=color
+	dfs = diff --staged
+	fix = commit --amend -C HEAD
 
 [color]
 	ui = true
 
 [pull]
-    rebase = true
+	rebase = true
