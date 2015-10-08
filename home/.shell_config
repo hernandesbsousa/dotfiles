@@ -4,4 +4,4 @@ export HISTCONTROL=ignoreboth #avoid duplicate entries
 
 export PATH="$HOME/bin:$PATH";
 
-export EDITOR="subl -n -w"
+export EDITOR="atom -nw"
