@@ -24,4 +24,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Ruby
 .env.local
+.byebug_history
