@@ -7,6 +7,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git rbenv)
 
 [[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.functions ]] && source ~/.functions
 [[ -f ~/.shell_config ]] && source ~/.shell_config
 [[ -f ~/.local_config ]] && source ~/.local_config
 

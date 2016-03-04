@@ -1,0 +1,4 @@
+libv8fuck() {
+    echo "Installing $1 with system v8"
+    gem install "${1}" -- --with-system-v8
+}
