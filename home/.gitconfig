@@ -17,8 +17,9 @@
 	d = diff --word-diff=color
 	dfs = diff --staged
 	fix = commit --amend -C HEAD
-	delete = !git checkout master && git pull && git branch -d
 	undo = reset --soft HEAD~1
+	# delete current branch but only if it has been properly merged with master
+	delete = !BRANCH=$(git rev-parse --abbrev-ref HEAD) && git checkout master && git pull && git branch -d ${BRANCH}
 
 [color]
 	ui = true
