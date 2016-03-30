@@ -2,7 +2,7 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth #avoid duplicate entries
 
-export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$PATH"
 
 export EDITOR="atom -nw"
 
