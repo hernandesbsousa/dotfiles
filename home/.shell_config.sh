@@ -4,6 +4,8 @@ export HISTCONTROL=ignoreboth #avoid duplicate entries
 
 export PATH="$HOME/bin:$PATH"
 
+export PATH="/usr/local/sbin:$PATH"
+
 export EDITOR="atom -nw"
 
 #golang
