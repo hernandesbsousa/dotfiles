@@ -6,8 +6,8 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(git rbenv)
 
-[[ -f ~/.aliases.sh ]] && source ~/.aliases.sh
-[[ -f ~/.shell_config.sh ]] && source ~/.shell_config.sh
-[[ -f ~/.local_config.sh ]] && source ~/.local_config.sh
+[[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.shell_config ]] && source ~/.shell_config
+[[ -f ~/.local_config ]] && source ~/.local_config
 
 source $ZSH/oh-my-zsh.sh
