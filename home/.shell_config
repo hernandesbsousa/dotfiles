@@ -6,10 +6,19 @@ export PATH="$HOME/bin:$PATH"
 
 export PATH="/usr/local/sbin:$PATH"
 
-export EDITOR="atom -nw"
-
 #golang
 if hash go 2>/dev/null; then
   export GOPATH=$HOME/dev/golang
   export PATH=$PATH:$GOPATH/bin
 fi
+
+if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
+    source "/usr/local/share/chtf/chtf.sh"
+fi
+
+aws_env () {
+    if [[ -n "$AWS_PROFILE" ]]; then
+        echo " aws:($AWS_PROFILE)"
+    fi
+}
+export PS1='${ret_status} %{$fg[cyan]%}%c%{$reset_color%}$(aws_env) $(git_prompt_info)'
