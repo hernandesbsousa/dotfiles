@@ -1,6 +1,20 @@
 alias ll='ls -alFh'
 alias hgrep='history | grep'
+alias w="watch"
+
 alias g="git"
 alias gc="git commit -v"
 alias gs="git status"
 alias gl="git log"
+
+alias myip="curl -s ifconfig.co && curl -s ifconfig.co | pbcopy"
+
+alias mysql="docker run --rm -ti mysql:5.6 mysql"
+alias psql='docker run --rm -ti postgres:9 psql
+
+alias profile="echo $AWS_PROFILE"
+
+alias tp="terraform plan -out plan.out"
+alias ta="terraform apply plan.out"
+
+alias kube=kubectl
