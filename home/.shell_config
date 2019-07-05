@@ -22,3 +22,5 @@ aws_env () {
     fi
 }
 export PS1='${ret_status} %{$fg[cyan]%}%c%{$reset_color%}$(aws_env) $(git_prompt_info)'
+
+command -v jump && eval "$(jump shell)"
