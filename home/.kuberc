@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+# Set the default kube context if present
+default_kube_context="$HOME/.kube/config"
+if test -f "${default_kube_context}"; then
+  export KUBECONFIG="$default_kube_context"
+fi
+
+# Additional contexts should be in ~/.kube/custom-contexts/
+custom_kube_contexts_dir="$HOME/.kube/custom-contexts"
+mkdir -p "${custom_kube_contexts_dir}"
+
+for context_file in `ls "${custom_kube_contexts_dir}"`
+do
+    export KUBECONFIG="$custom_kube_contexts_dir/$context_file:$KUBECONFIG"
+done
